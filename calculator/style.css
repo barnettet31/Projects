@@ -56,6 +56,7 @@ button:active{
   background-color:#fcfcfc;
   border-top:solid 1px;
   border-color:#F4F4F4;
+  border-radius:0 0 15px 15px;
   padding:5vw 1vw;
 }
 .c-button{
