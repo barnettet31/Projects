@@ -8,21 +8,26 @@ textarea{
   width:80%;
   height:20%;
   border:none;
+  border-color:#F4F4F4;
   border-radius:15px;
   resize:none;
   text-align:right;
   outline:none;
   margin-top:1vw;
   caret-color:#76990F;
+  padding:1vw;
 }
 button{
-  font-family:arial samsung;
+  font-family:arial;
+  font-size:.75rem;
+  padding:0.1rem;
   background-color:#F4F4F4;
   border:solid 1px;
   border-color:#F5F5F5;
-  border-radius:20px;
+  border-radius:20px ;
   outline:none;
-  width:25%;
+  width:20%;
+  margin:0.4vw;
 }
 button:active{
   background-color:#636363;
@@ -44,5 +49,21 @@ button:active{
 .button-div{
   display:flex;
   justify-content:center;
+  flex-direction:row;
+  flex-wrap:wrap;
   background-color:#fcfcfc;
+  border-top:solid 1px;
+  border-color:#F4F4F4;
+  padding:5vw 1vw;
+}
+.c-button{
+color:#E56844;
+}
+.green-text{
+  color:#54A37B;
+}
+.equal-sign{
+  background-color:#54A37B;
+  color:white;
+  transition:scale(75%) 1s;
 }
