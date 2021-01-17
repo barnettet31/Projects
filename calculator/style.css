@@ -1,12 +1,12 @@
 body{
   background-color: #202124;
-  font-family:arial Samsung;
+  font-family:arial;
 
 }
 .textarea{
   background-color:#FCFCFC;
   width:80%;
-  height:20%;
+  height:10vw;
   border:none;
   border-color:#F4F4F4;
   border-radius:15px;

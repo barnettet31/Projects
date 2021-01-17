@@ -10,7 +10,9 @@ document.querySelector(".button-div").addEventListener("click", function(event) 
   } else if (buttonClicked == "clear") {
     textArea.innerHTML= null;
   } else if(buttonClicked=="+"||buttonClicked=="/"||buttonClicked=="-"||buttonClicked=="*"){
-    textArea.append(buttonClicked);}else if(buttonClicked=="="){calculate();}else {
+    textArea.append(buttonClicked);}else if(buttonClicked=="="){var x=document.querySelector(".textarea").innerHTML;
+var y=eval(x);
+document.querySelector(".textarea").innerHTML=y;}else {
     null;
   }
 
