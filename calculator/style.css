@@ -3,9 +3,46 @@ body{
   font-family:arial Samsung;
 
 }
+textarea{
+  background-color:#FCFCFC;
+  width:80%;
+  height:20%;
+  border:none;
+  border-radius:15px;
+  resize:none;
+  text-align:right;
+  outline:none;
+  margin-top:1vw;
+  caret-color:#76990F;
+}
+button{
+  font-family:arial samsung;
+  background-color:#F4F4F4;
+  border:solid 1px;
+  border-color:#F5F5F5;
+  border-radius:20px;
+  outline:none;
+  width:25%;
+}
+button:active{
+  background-color:#636363;
+}
 /*Class Name Css*/
 .calculator-parent{
   display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
   justify-content:center;
   margin:10vh auto;
+  background-color:#FCFCFC;
+  border: 2px solid;
+  border-color:#F5F5F5;
+  border-radius:15px;
+  max-width:66%;
+
+}
+.button-div{
+  display:flex;
+  justify-content:center;
+  background-color:#fcfcfc;
 }
