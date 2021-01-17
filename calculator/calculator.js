@@ -1,2 +1,2 @@
 
-var userInput=document.querySelector("textarea");
+var textArea=document.querySelector("textarea").value;
