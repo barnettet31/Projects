@@ -20,6 +20,7 @@ textarea{
 button{
   font-family:arial;
   font-size:.75rem;
+  font-weight:bold;
   padding:0.1rem;
   background-color:#F4F4F4;
   border:solid 1px;
@@ -30,7 +31,8 @@ button{
   margin:0.4vw;
 }
 button:active{
-  background-color:#636363;
+  background-color:#929292;
+  font-size:0.65rem;
 }
 /*Class Name Css*/
 .calculator-parent{
@@ -60,10 +62,14 @@ button:active{
 color:#E56844;
 }
 .green-text{
-  color:#54A37B;
+  color:#76990F;
 }
 .equal-sign{
-  background-color:#54A37B;
+  background-color:#76990F;
   color:white;
-  transition:scale(75%) 1s;
+
+}
+.equal-sign:active{
+  background-color:#3F693C;
+  font-size:0.65rem;
 }
