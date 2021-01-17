@@ -1,0 +1,11 @@
+body{
+  background-color: #202124;
+  font-family:arial Samsung;
+
+}
+/*Class Name Css*/
+.calculator-parent{
+  display:flex;
+  justify-content:center;
+  margin:10vh auto;
+}
