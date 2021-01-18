@@ -1,11 +1,13 @@
 var buttonClicked = null;
 var textAreaValue = 0;
-//This is a function that detects the button press and appends the inner text of the text-area div based on that input, then if the user clicks on the equal sign, it will run eval on the string. 
+  var digit=/([0-9]|[(-/])/g;
+//This is a function that detects the button press and appends the inner text of the text-area div based on that input, then if the user clicks on the equal sign, it will run eval on the string.
 document.querySelector(".button-div").addEventListener("click", function(event) {
   buttonClicked = event.target.value;
   var textArea = document.querySelector(".textarea");
+  var test=digit.test(buttonClicked);
   console.log(buttonClicked);
-  if (buttonClicked == 0 || buttonClicked == 1 || buttonClicked == 2 || buttonClicked == 3 || buttonClicked == 4 || buttonClicked == 5 || buttonClicked == 6 || buttonClicked == 7 || buttonClicked == 8 || buttonClicked == 9 || buttonClicked == "+" || buttonClicked == "/" || buttonClicked == "-" || buttonClicked == "*") {
+  if (test==true) {
     textArea.append(buttonClicked);
   } else if (buttonClicked == "clear") {
     textArea.innerHTML = null;
@@ -19,11 +21,5 @@ document.querySelector(".button-div").addEventListener("click", function(event) 
 
 });
 
-// function calculate(){
-// textAreaValue=  document.querySelector("textarea").value;
-// var x=/g \d;
-// console.log(x);
-//
-//
-//
-// }
+
+// || buttonClicked == 1 || buttonClicked == 2 || buttonClicked == 3 || buttonClicked == 4 || buttonClicked == 5 || buttonClicked == 6 || buttonClicked == 7 || buttonClicked == 8 || buttonClicked == 9 || buttonClicked == "+" || buttonClicked == "/" || buttonClicked == "-" || buttonClicked == "*"
