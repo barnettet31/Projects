@@ -38,7 +38,7 @@ button {
 
 button:active {
   background-color: #929292;
-  font-size: 0.65rem;
+  font-size: 3rem;
 }
 
 /*Class Name Css*/
@@ -83,5 +83,5 @@ button:active {
 
 .equal-sign:active {
   background-color: #3F693C;
-  font-size: 0.65rem;
+  font-size: 3rem;
 }
