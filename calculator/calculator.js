@@ -1,6 +1,6 @@
 var buttonClicked = null;
 var textAreaValue = 0;
-
+//This is a function that detects the button press and appends the inner text of the text-area div based on that input, then if the user clicks on the equal sign, it will run eval on the string. 
 document.querySelector(".button-div").addEventListener("click", function(event) {
   buttonClicked = event.target.value;
   var textArea = document.querySelector(".textarea");
