@@ -12,7 +12,7 @@ document.querySelector(".button-div").addEventListener("click", function(event) 
   } else if (buttonClicked == "*" || buttonClicked == "-" || buttonClicked == "+" || buttonClicked == "/") {
     var textAreaLength = textArea.innerText.length - 1;
     var lastItem = textArea.innerText[textAreaLength];
-    if (lastItem == "*" || lastItem == "/" || lastItem == "+" || lastItem == "-"||lastItem==null) {
+    if (lastItem == "*" || lastItem == "/" || lastItem == "+" || lastItem == "-" || lastItem == null) {
       null;
     } else {
       textArea.append(buttonClicked);
@@ -32,17 +32,20 @@ document.querySelector(".button-div").addEventListener("click", function(event) 
     var y = eval(x) * (-1);
     document.querySelector(".textarea").innerHTML = y;
 
-  } else if(buttonClicked==".") {
-         var textAreaLength = textArea.innerText.length - 1;
-         var lastItem = textArea.innerText[textAreaLength];
-           if (lastItem == 1 || lastItem== 2 ||lastItem == 3 || lastItem==4 || lastItem== 5 ||lastItem == 6 ||lastItem == 7 || lastItem== 8 ||lastItem == 9 || lastItem== 0){
-             textArea.append(buttonClicked);
-           }else if(lastItem==null||lastItem == "*" || lastItem == "/" || lastItem == "+" || lastItem == "-"){
-             textArea.append("0.");
-           }else{null;}
+  } else if (buttonClicked == ".") {
+    var textAreaLength = textArea.innerText.length - 1;
+    var lastItem = textArea.innerText[textAreaLength];
+    if (lastItem == 1 || lastItem == 2 || lastItem == 3 || lastItem == 4 || lastItem == 5 || lastItem == 6 || lastItem == 7 || lastItem == 8 || lastItem == 9 || lastItem == 0) {
+      textArea.append(buttonClicked);
+    } else if (lastItem == null || lastItem == "*" || lastItem == "/" || lastItem == "+" || lastItem == "-") {
+      textArea.append("0.");
+    } else {
+      null;
+    }
+  } else {
+    null;
   }
-    else{null;}
-  });
+});
 
 
 // || buttonClicked == 1 || buttonClicked == 2 || buttonClicked == 3 || buttonClicked == 4 || buttonClicked == 5 || buttonClicked == 6 || buttonClicked == 7 || buttonClicked == 8 || buttonClicked == 9 || buttonClicked == "+" || buttonClicked == "/" || buttonClicked == "-" || buttonClicked == "*"
