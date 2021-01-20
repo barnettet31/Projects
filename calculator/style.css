@@ -79,10 +79,13 @@ button:active {
 .equal-sign {
   background-color: #76990F;
   color: white;
-  
+
 }
 
 .equal-sign:active {
   background-color: #3F693C;
   font-size: 3rem;
+}
+.second-button-div{
+  display:none;
 }
