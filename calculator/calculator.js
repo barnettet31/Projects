@@ -40,14 +40,46 @@ document.querySelector(".button-div").addEventListener("click", function(event){
       textArea.append("0.");
     } else {
       null;
-    }
+    }}else if(buttonClicked=="more"){
+      document.querySelector(".second-button-div").classList.add("revealSecondDiv");
   } else {
     null;
   }
 });
-//
-// var x = document.querySelector(".textarea").innerHTML;
-// var y = eval(x) * (-1);
-// document.querySelector(".textarea").innerHTML = y;
+document.querySelector(".second-button-div").addEventListener("click", function(event){
+  buttonClicked = event.target.value;
+  if(buttonClicked=="hide"){
+    hideSecondDiv();
+  }else if (buttonClicked==")"||buttonClicked=="**"){textArea.append(buttonClicked);}
+  else if (buttonClicked=="sign-change"){
+    signChange();
+  } else if (buttonClicked=="("){
+    openParantheses();
+  }
+    else{null;}
+});
 
-// || buttonClicked == 1 || buttonClicked == 2 || buttonClicked == 3 || buttonClicked == 4 || buttonClicked == 5 || buttonClicked == 6 || buttonClicked == 7 || buttonClicked == 8 || buttonClicked == 9 || buttonClicked == "+" || buttonClicked == "/" || buttonClicked == "-" || buttonClicked == "*"
+//hides div by adding a class
+function hideSecondDiv(){
+  document.querySelector(".second-button-div").classList.remove("revealSecondDiv");
+}
+
+//evaluates all numbers in the text box and then multiplies them by one and adds -1*( if there isn't a number in the box
+function signChange(){
+  var x = document.querySelector(".textarea").innerHTML;
+  var y = eval(x) *(-1);
+  if (y===NaN){document.querySelector(".textArea").innerHTML="-1*("}
+  else{
+  document.querySelector(".textarea").innerHTML = y;}
+}
+
+//function that checks to see the last number in the text box and then makes a decision on what parantheses value gets inserted as a result
+function openParantheses(){
+  var x=textArea.innerHTML.length-1;
+  var y=textArea.innerHTML[x]
+  if (y==null||y=="+"||y=="*"||y=="/"||y=="-"||y=="**"){
+    textArea.append(buttonClicked);
+  }else{
+    textArea.append("*(");
+  }
+}

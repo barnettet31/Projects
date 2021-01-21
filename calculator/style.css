@@ -16,7 +16,7 @@ body {
   text-align: right;
   outline: none;
   margin-top: 1vw;
-  caret-color: #76990F;
+
   padding: 1vw;
 }
 
@@ -87,5 +87,30 @@ button:active {
   font-size: 3rem;
 }
 .second-button-div{
-  display:none;
+  position:absolute;
+  height:80vh;
+  left:-90%;
+  top:15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content:center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #fcfcfc;
+  border-top: solid 1px;
+  border-color: #F4F4F4;
+  border-radius: 0 0 15px 15px;
+
+  width: 90%;
+  transition: left 1.5s;
+
+}
+.revealSecondDiv{
+  left:8%;
+
+}
+
+.little-y{
+  vertical-align:super;
+  font-size:50%;
 }
