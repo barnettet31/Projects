@@ -1,0 +1,103 @@
+/*Element Classes*/
+body {
+  background-color: #202124;
+  color: white;
+  font-family: 'Potta One', cursive;
+}
+
+button:click {
+  border-style: none;
+}
+
+h2 {
+  font-family: 'Potta One', cursive;
+  color: white;
+  font-size: 3vw;
+}
+
+table {
+  margin-top: 1rem;
+}
+
+td {
+  width: 50vw;
+  text-align: center;
+}
+
+p {
+  font-size: 2vw;
+}
+
+/*Element Classes*/
+.victor {
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  font-size: 5vw;
+  font-family: 'Potta One', cursive;
+}
+
+.dice-image {
+  margin: 0 auto;
+  width: 20vw;
+  height: 20vw;
+}
+
+.image-parent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.button-parent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.button {
+  width: 20vw;
+  height: 6vw;
+  border-radius: 15px;
+  border: solid 2px;
+  border-color: grey;
+  background-color: #9C060C;
+  color: white;
+  font-size: 4vw;
+  font-family: 'Potta One', cursive;
+  outline:none;
+  transition-duration:1s;
+}
+.button:active{
+  background-color:#CD5C5C;
+  transform:scale(.85);
+
+
+}
+.counter-div {
+  margin-top: 8rem;
+}
+
+/*Classes to Be Used With Java Script*/
+.dice-animation {
+  transition-property: all;
+  transition-duration: 3s;
+  transform: rotate(360deg) scale(0.5);
+  transition-timing-function: ease;
+}
+
+.dice-animation-return {
+  transition-property: all;
+  transition-duration: 3s;
+  transform: rotate(720deg) scale(1);
+  transition-timing-function: ease;
+}
+
+.rotate-block {
+  display: block;
+  transition-property: all;
+  transition-duration: 3s;
+  transform: rotate(720deg) scale(1);
+  transition-timing-function: ease;
+}
