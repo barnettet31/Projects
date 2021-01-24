@@ -1,0 +1,39 @@
+body{
+  background-color:#f0ead6;
+  text-align:center;
+
+}
+h1{
+  font-size:4em;
+  margin-bottom:2em;
+}
+textarea{
+  width:50%;
+  font-size:2vw;
+  border:solid 1px;
+  border-color:black;
+  border-radius:15px;
+  outline:none;
+  height:2.0em;
+  vertical-align: top;
+  resize:none;
+
+}
+textarea::placeholder{
+  color:#929292;
+}
+
+/*Class Styles*/
+.submit{
+  margin-left: 1em;
+  width:10%;
+  border-radius:15px;
+  outline:none;
+  font-size:2vw;
+  vertical-align: top;
+  height:2.0em;
+}
+
+.submit:active{
+  background-color:white;
+}
