@@ -114,7 +114,7 @@ button:active {
   vertical-align:super;
   font-size:50%;
 }
-@media  only screen and (max-width: 900px){
+/* @media  only screen and (max-width: 900px){
   button {
     flex-basis: auto;
     font-family: arial;
@@ -149,8 +149,7 @@ button:active {
     border-top: solid 1px;
     border-color: #F4F4F4;
     border-radius: 0 0 15px 15px;
-
-    width: 90%;
+    width: 90%; */
     transition: left 1.5s;
 
   }
