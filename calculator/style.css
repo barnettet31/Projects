@@ -154,5 +154,9 @@ button:active {
     transition: left 1.5s;
 
   }
+  .revealSecondDiv{
+    left:5%;
+
+  }
 
 }
