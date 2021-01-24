@@ -118,7 +118,7 @@ button:active {
   button {
     flex-basis: auto;
     font-family: arial;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
     text-align:center;
     background-color: #F4F4F4;
@@ -133,7 +133,7 @@ button:active {
 
   button:active {
     background-color: #929292;
-    font-size: 3.0em;
+    font-size: 2.0em;
   }
   .second-button-div{
     position:absolute;
