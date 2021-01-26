@@ -59,9 +59,11 @@ function addDeleteFunction(newDeleteButton){
 var numberOfDeleteButtons=document.querySelectorAll(".delete-button").length;
 var numberOfButtons=document.querySelectorAll(".added-delete-button").length;
 
+
   for(i=0; i<numberOfDeleteButtons; i++){
   document.querySelectorAll(".delete-button")[i].addEventListener("click", deleteButton);
 }
+
 }
 
 
