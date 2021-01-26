@@ -1,10 +1,11 @@
 body{
   background-color:#f0ead6;
   text-align:center;
+  font-family: 'Roboto Mono', monospace;
 
 }
 h1{
-  font-size:4em;
+  font-size:4vw;
   margin-bottom:2em;
 }
 textarea{
@@ -35,5 +36,31 @@ textarea::placeholder{
 }
 
 .submit:active{
+  background-color:white;
+}
+
+.list-div{
+  margin:2em auto;
+
+}
+.list{
+  font-size:2vw;
+  text-align:left;
+  border: 2px solid;
+  border-radius:10px;
+  background-color:white;
+  margin:1vw;
+
+
+}
+.delete-button{
+  font-size:65%;
+  border:1px solid;
+  border-radius:10px;
+  margin:0.5vw;
+  background-color:grey;
+  float:right;
+}
+.delete-button:active{
   background-color:white;
 }
