@@ -1,0 +1,15 @@
+body{
+    font-family:arial, sans-serif;
+
+}
+h1{
+    font-size:2rem;
+    text-align:center;
+
+}
+@media (prefers-color-scheme:dark){
+    body{
+        background-color: darkslategray;
+        color:white;
+    };
+} 
