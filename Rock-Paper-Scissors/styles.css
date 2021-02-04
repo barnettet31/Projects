@@ -7,6 +7,15 @@ h1{
     text-align:center;
 
 }
+
+div{
+    display:flex;
+    justify-content:center;
+    margin-top:5vh;
+}
+input{
+    outline:none;
+}
 @media (prefers-color-scheme:dark){
     body{
         background-color: darkslategray;
