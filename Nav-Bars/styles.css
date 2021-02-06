@@ -70,6 +70,9 @@ a:active {
     
     
 }
+.flex{
+    display:flex;
+}
 /*1200 px media queries*/
 
 @media (max-width:1200px){
