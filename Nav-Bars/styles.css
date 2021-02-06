@@ -93,7 +93,7 @@ a:active {
         background-color:#389dff;
     }
     .hidden-menu{
-        display:flex;
+        
         width:100%;
         font-size:2vw;
         margin:auto;
