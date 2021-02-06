@@ -20,6 +20,8 @@ body {
 }
 .logo {
   font-size: 5vw;
+  font-size: 5vw;
+  margin: 1vw;
 }
 
 .links {
@@ -85,15 +87,16 @@ a:active {
         margin: auto 1vw ;
         background-color:#0077ea;
         border: solid 1px white;
-        border-radius:15px;
-        padding:.75vw;
+        border-radius: 5px;
+        padding: 1vw;
+        font-size: 3vw;
+        margin: 1vw;
 
     }
     .menu-btn:active{
         background-color:#389dff;
     }
     .hidden-menu{
-        
         width:100%;
         font-size:2vw;
         margin:auto;
