@@ -7,9 +7,9 @@ function showMenu(){
     alert(
         buttonText
     );
-    if(buttonText="Menu"){
+    if(buttonText=="Menu"){
         button.innerHTML="Close";
-    }else if (buttonText="Close"){
+    }else if (buttonText=="Close"){
         button.innerHTML="Menu";
     }
     
