@@ -3,15 +3,12 @@ const hiddenMenu=document.querySelector(".hidden-menu");
 
 
 function showMenu(){
-    var buttonText=button.innerHTML;
-    var menu="Menu";
-    var closed="Close";
+    let buttonText=button.innerHTML;
+    alert(
+        buttonText
+    );
+    
    
-   if(buttonText=menu){
-       button.innerHTML=closed;
-   } else {
-    button.innerHTML="Menu";
-   }
 
 }
 
