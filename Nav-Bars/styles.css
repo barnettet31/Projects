@@ -84,7 +84,6 @@ a:active {
     }
     .menu-btn{
         display:flex;
-        margin: auto 1vw ;
         background-color:#0077ea;
         border: solid 1px white;
         border-radius: 5px;
