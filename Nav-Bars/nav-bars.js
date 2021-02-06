@@ -7,6 +7,11 @@ function showMenu(){
     alert(
         buttonText
     );
+    if(buttonText="Menu"){
+        button.innerHTML="Close";
+    }else if (buttonText="Close"){
+        button.innerHTML="Menu";
+    }
     
    
 
