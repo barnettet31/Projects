@@ -30,6 +30,10 @@ legend, caption, tfoot, thead
     background: linear-gradient(180deg,#434343 0%,#1c1c1c 100%);
     position:fixed;
     }
+.navbar img
+{
+margin:2vh 0;
+}
 .navbar .menulist
     {
     display:flex;
@@ -41,7 +45,7 @@ legend, caption, tfoot, thead
     color:#fff;
     font: bolder 1.5em 'Catamaran', sans-serif;
     }
-.menulist a
+.desktop-menu
     {
     display:flex;   
     flex-direction: column;
@@ -51,10 +55,49 @@ legend, caption, tfoot, thead
     text-align:center;
     
     }
-.menulist a:hover
+.desktop-menu:hover
 {
 color:#434343;
 background: linear-gradient(180deg,#fff 0%, #e1e1e1 100%);
+cursor:pointer;
+}
+
+.inventory
+{
+position:relative;
+display:flex;
+align-self: center;
+}
+.dropdown
+{
+display:none !important;
+position:absolute;
+color:none;
+z-index:-1;
+width:100%;
+transition:top .2s ease;
+
+}
+.dropdown a
+{
+color:#e1e1e1;
+margin:5% 0;
+width:100%;
+
+}
+.inventory:hover .dropdown
+{
+display:flex !important;
+flex-direction:column;
+justify-content: space-evenly;
+background:linear-gradient(180deg,#434343 0%,#1c1c1c 100%) !important;
+top:100%;
+
+}
+.dropdown a:hover
+{
+background:linear-gradient(180deg,#fff 0%,#e1e1e1 100%);
+color:#434343;
 }
 .sidemenu
 {
