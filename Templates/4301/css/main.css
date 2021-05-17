@@ -1,0 +1,174 @@
+/* CSS Document */
+
+/*PAGE LAYOUT*/
+
+html, body, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, fieldset, form, label,
+legend, caption, tfoot, thead
+	{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	}
+
+/*nav-bar*/
+.navbar
+    {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+    background: linear-gradient(180deg,#434343 0%,#1c1c1c 100%);
+    position:fixed;
+    }
+.navbar .menulist
+    {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:60%;
+    list-style: none;
+    align-items: center;
+    color:#fff;
+    font: bolder 1.5em 'Catamaran', sans-serif;
+    }
+.menulist a
+    {
+    display:flex;   
+    flex-direction: column;
+    justify-content:center;
+    height:100%;
+    width:100%;
+    text-align:center;
+    
+    }
+.menulist a:hover
+{
+color:#434343;
+background: linear-gradient(180deg,#fff 0%, #e1e1e1 100%);
+}
+.sidemenu
+{
+display:none;
+}
+@media screen and (max-width:1800px)
+    {
+    .navbar .menulist
+        {
+        font: bolder 1.25em 'Catamaran', sans-serif;
+        }    
+    }
+@media screen and (max-width:1440px) 
+    {
+
+        .navbar .menulist
+            {
+            font: bolder 1em 'Catamaran', sans-serif;
+            }
+    
+    }
+@media screen and (max-width:1150px)
+    {
+    .navbar .menulist
+        {
+        font: bolder 0.75em 'Catamaran', sans-serif;
+        }
+    }
+
+@media screen and (max-width:900px)
+    {
+    .navbar
+        {
+        justify-content:space-between;
+        position:fixed;
+        }
+    .navbar .menulist
+        {
+        display:none;
+        }
+    .container 
+        {
+        display: inline-block;
+        cursor: pointer;
+        z-index:10;
+        position:absolute;
+        top:25%;
+        right:5%; 
+
+         }
+
+    .bar1, .bar2, .bar3
+        {
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+        }
+
+/* Rotate first bar */
+    .change .bar1 
+        {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+        transform: rotate(-45deg) translate(-9px, 6px) ;
+        }
+
+/* Fade out the second bar */
+    .change .bar2
+        {
+        opacity: 0;
+        }
+
+/* Rotate last bar */
+    .change .bar3 
+        {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
+        }
+    .sidemenu
+        {
+        position:fixed;
+        display:flex;
+        flex-direction:column;
+        height:100%;
+        width:75%;
+        justify-content:space-evenly;
+        background:linear-gradient(180deg, #434343 0%, #1c1c1c 100%);
+        z-index:1;
+        left:-75%;
+        transition: left 2s ease;
+        border-left: 3px #28aae1;
+        overflow:scroll;
+        scrollbar-width: none;
+        }
+    .sidemenu a 
+        {
+        color:#fff;
+        font: bolder 2em 'Catamaran', sans-serif;
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+        height:100%;    
+        justify-content:center;
+        }
+    .sidemenu a:active
+        {
+        color:#434343;
+        background: linear-gradient(180deg,#fff 0%, #e1e1e1 100%);
+        }
+    .slide
+        {
+        left:0;
+        }
+    }
+
+
