@@ -91,6 +91,10 @@ display:none;
         justify-content:space-between;
         position:fixed;
         }
+    .navbar img
+        {
+        width:30%;
+        }
     .navbar .menulist
         {
         display:none;
