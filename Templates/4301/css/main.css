@@ -93,7 +93,8 @@ display:none;
         }
     .navbar img
         {
-        width:30%;
+        width:50%;
+
         }
     .navbar .menulist
         {
@@ -103,6 +104,7 @@ display:none;
         {
         display: inline-block;
         cursor: pointer;
+        margin-right:5%;
 
          }
 
