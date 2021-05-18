@@ -187,15 +187,16 @@ display:none;
         display:flex;
         flex-direction:column;
         height:100vh;
-        width:75%;
+        width:70%;
         justify-content:space-evenly;
         background:linear-gradient(180deg, #434343 0%, #1c1c1c 100%);
         z-index:1;
-        left:-75%;
-        transition: left 2s ease;
+        right:-70%;
+        transition: right 1s ease;
         overflow:scroll;
         scrollbar-width: none;
         user-select:none;
+        opacity:0.9;
         }
     .sidemenu a 
         {
@@ -214,7 +215,12 @@ display:none;
         }
     .slide
         {
-        left:0;
+        right:0;
+        }
+    .sidemenu-container
+        {
+        position:absolute;
+        top:100%;
         }
     }
 
